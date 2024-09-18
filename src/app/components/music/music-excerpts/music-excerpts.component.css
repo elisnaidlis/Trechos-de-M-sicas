@@ -1,0 +1,70 @@
+.actions {
+  display: flex;
+  justify-content: flex-end
+}
+
+.button-delete {
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: 10px;
+  background-color: transparent;
+}
+
+.button-edit {
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: transparent;
+}
+
+.excerpts {
+  background-color: #F8F9FE;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.excerpts .content {
+  margin: 1rem auto;
+  word-wrap: break-word;
+}
+
+.excerpts .author {
+  word-wrap: break-word;
+  font-size: 24px;
+}
+
+.card_1 {
+  border: 3px solid #79B5F1;
+  background-color: #eef2f8;
+}
+
+.card_2 {
+  border: 3px solid #7ECEAC;
+  background-color: #F6FEFA;
+}
+
+.card_3 {
+  border: 3px solid #E4A279;
+  background-color: #FFF9F5;
+}
+
+.excerpts-g {
+  width: 556px;
+}
+
+.excerpts-p {
+  width: 262px;
+}
+
+@media screen and (max-width: 768px) {
+  .excerpts-g {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .excerpts-p {
+    width: 100%;
+  }
+}

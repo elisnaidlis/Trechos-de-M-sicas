@@ -1,0 +1,34 @@
+{
+  "excerpts": [
+    {
+      "id": "1",
+      "content": "Minha API fake hihi",
+      "author": "Elis",
+      "card": "card_1"
+    },
+    {
+      "id": "2",
+      "content": "Feliz Estou",
+      "author": "Frozen",
+      "card": "card_2"
+    },
+    {
+      "id": "3",
+      "content": "Top demaiss",
+      "author": "Elis",
+      "card": "card_3"
+    },
+    {
+      "id": "7765",
+      "content": "Eu não mereço, mas sua graça me alcançou",
+      "author": "Fernandinho",
+      "card": "card_3"
+    },
+    {
+      "id": "2ee9",
+      "content": "Essa menina é um desenho no céu. Que Deus pintou e jogou fora o pincel.",
+      "author": "Thiago Brava",
+      "card": "card_3"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<div class="excerpts {{ excerpts.card }}" [ngClass]="widthExcerpts()">
+  <img src="/assets/{{ excerpts.card }}.png" alt="icones de música" width="46px">
+  <p class="content ff-roboto-mono">{{ excerpts.content }}</p>
+  <p class="author ff-allison">{{ excerpts.author }}</p>
+  <div class="actions">
+    <button class="button-edit">
+      <img src="/assets/icon-edit.svg" alt="Icone de editar" width="22px">
+    </button>
+    <button class="button-delete">
+      <img src="/assets/icon-delete.svg" alt="Icone de excluir" width="24px">
+    </button>
+  </div>
+</div>

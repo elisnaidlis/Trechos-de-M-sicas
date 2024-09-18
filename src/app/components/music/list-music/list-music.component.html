@@ -1,0 +1,22 @@
+<section class="container">
+  <header class="header d-flex">
+      <h2 class="ff-inter">Meu Mural</h2>
+      <button routerLink="/create-music" class="button">Adicionar Música</button>
+  </header>
+
+  <!-- Essa div irá renderizar o componente music-excerpts -->
+  <div class="wall" *ngIf="listMusic.length > 0; else noExcerpts">
+    <div *ngFor="let music of listMusic">
+      <app-music-excerpts [excerpts]="music"></app-music-excerpts>
+    </div>
+  </div>
+</section>
+
+<ng-template #noExcerpts>
+  <div class="ff-roboto-mono no-excerpts">
+    <p>Ainda não há trechos de músicas adicionados!</p>
+  </div>
+</ng-template>
+
+
+
