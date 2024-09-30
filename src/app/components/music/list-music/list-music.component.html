@@ -7,7 +7,7 @@
   <!-- Essa div irá renderizar o componente music-excerpts -->
   <div class="wall" *ngIf="listMusic.length > 0; else noExcerpts">
     <div *ngFor="let music of listMusic">
-      <app-music-excerpts [excerpts]="music"></app-music-excerpts>
+      <app-music-excerpts [musicExcerpts]="music"></app-music-excerpts>
     </div>
   </div>
 </section>

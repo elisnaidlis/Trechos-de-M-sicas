@@ -12,7 +12,7 @@ import { ExcerptsService } from '../excerpts.service';
 })
 export class DeleteMusicComponent implements OnInit  {
 
-  music: Excerpts = {
+  deleteMusic: Excerpts = {
     id: '',
     content: '',
     author: '',
@@ -21,13 +21,26 @@ export class DeleteMusicComponent implements OnInit  {
 
   constructor(
     private service: ExcerptsService,
-    private router: Router,
+    private router: Router,  //Para fazer o redirecio
     private route: ActivatedRoute
   ) {}
 
   ngOnInit(): void {
-    const id = this.route.snapshot
+    const id = this.route.snapshot.paramMap.get('id')
+    this.service.searchById((id!)).subscribe((deleteMusic) => {
+      this.deleteMusic = deleteMusic
+    })
   }
 
+  deleteExcerpt() {
+    if(this.deleteMusic.id) {
+      this.service.delete(this.deleteMusic.id).subscribe(() => {
+        this.router.navigate(['/list-music'])
+      })
+    }
+  }
 
+  cancel() {
+    this.router.navigate(['/list-music'])
+  }
 }

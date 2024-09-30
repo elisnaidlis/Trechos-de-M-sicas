@@ -13,7 +13,8 @@ import { ExcerptsService } from '../excerpts.service';
 })
 export class CreateMusicComponent {
 
-  music: Excerpts = {
+  createExcerpts: Excerpts = {
+
     content: '',
     author: '',
     card: 'card_1'
@@ -26,7 +27,7 @@ export class CreateMusicComponent {
   ) { }
 
   createMusic() {
-    this.service.create(this.music).subscribe(() => {
+    this.service.create(this.createExcerpts).subscribe(() => {
       this.router.navigate(['/list-music'])
     })
   }

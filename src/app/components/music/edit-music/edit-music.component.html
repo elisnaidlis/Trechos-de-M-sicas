@@ -1,8 +1,8 @@
-<section class="container create-music ff-inter">
+<section class="container edit-excerpts ff-inter">
   <header class="header">
-    <h2>Adicione um novo trecho de música</h2>
+    <h2>Editar um trecho de música</h2>
   </header>
-  <form class="create-container">
+  <form class="edit-container">
     <label for="music">Trecho da Música</label>
     <input
       type="textarea"
@@ -10,7 +10,7 @@
       id="music"
       name="music"
       placeholder="Digite o trecho da música"
-      [(ngModel)]="createExcerpts.content"
+      [(ngModel)]="editExcerpts.content"
     >
     <label for="author">Cantor(a)</label>
     <input
@@ -19,16 +19,16 @@
       id="author"
       name="author"
       placeholder="Insira o nome do(a) cantor(a)."
-      [(ngModel)]="createExcerpts.author"
+      [(ngModel)]="editExcerpts.author"
     >
   </form>
 </section>
 
-<section class="container create-music ff-inter">
+<section class="container edit-excerpts ff-inter">
   <header class="header">
     <h2>Selecione o modelo do card</h2>
   </header>
-  <div class="create-container">
+  <div class="edit-container">
     <div class="container-radio">
       <div class="radio-card">
         <label for="card_1">
@@ -37,7 +37,7 @@
             id="card_1"
             value="card_1"
             name="model-card"
-            [(ngModel)]="createExcerpts.card"
+            [(ngModel)]="editExcerpts.card"
           >
           <div class="custom-radio">
             <span></span>
@@ -47,8 +47,8 @@
         Prévia:
         <div class="card card_1">
           <img src="/assets/card_1.png" alt="icone de música azul">
-          <p class="content ff-roboto-mono">{{ createExcerpts.content }}</p>
-          <p class="author ff-allison">{{ createExcerpts.author }}</p>
+          <p class="content ff-roboto-mono">{{ editExcerpts.content }}</p>
+          <p class="author ff-allison">{{ editExcerpts.author }}</p>
         </div>
       </div>
 
@@ -59,7 +59,7 @@
           id="card_2"
           value="card_2"
           name="model-card"
-          [(ngModel)]="createExcerpts.card"
+          [(ngModel)]="editExcerpts.card"
           >
           <div class="custom-radio">
             <span></span>
@@ -69,8 +69,8 @@
         Prévia:
         <div class="card card_2">
           <img src="/assets/card_2.png" alt="icone de música verde">
-          <p class="content ff-roboto-mono">{{ createExcerpts.content }}</p>
-          <p class="author ff-allison">{{ createExcerpts.author }}</p>
+          <p class="content ff-roboto-mono">{{ editExcerpts.content }}</p>
+          <p class="author ff-allison">{{ editExcerpts.author }}</p>
         </div>
       </div>
 
@@ -81,7 +81,7 @@
             id="card_3"
             value="card_3"
             name="model-card"
-            [(ngModel)]="createExcerpts.card"
+            [(ngModel)]="editExcerpts.card"
             >
           <div class="custom-radio">
             <span></span>
@@ -91,8 +91,8 @@
         Prévia:
         <div class="card card_3">
           <img src="/assets/card_3.png" alt="icone de música laranja">
-          <p class="content ff-roboto-mono">{{ createExcerpts.content }}</p>
-          <p class="author ff-allison">{{ createExcerpts.author }}</p>
+          <p class="content ff-roboto-mono">{{ editExcerpts.content }}</p>
+          <p class="author ff-allison">{{ editExcerpts.author }}</p>
         </div>
       </div>
     </div>
@@ -101,6 +101,6 @@
 </section>
 
 <div class="actions">
-  <button (click)="createMusic()" class="button ff-inter">Salvar</button>
+  <button (click)="editMusic()" class="button ff-inter">Salvar</button>
   <button (click)="cancelMusic()" class="button ff-inter">Cancelar</button>
 </div>

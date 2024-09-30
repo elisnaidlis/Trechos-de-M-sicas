@@ -1,12 +1,12 @@
-<div class="excerpts {{ excerpts.card }}" [ngClass]="widthExcerpts()">
-  <img src="/assets/{{ excerpts.card }}.png" alt="icones de música" width="46px">
-  <p class="content ff-roboto-mono">{{ excerpts.content }}</p>
-  <p class="author ff-allison">{{ excerpts.author }}</p>
+<div class="excerpts {{ musicExcerpts.card }}" [ngClass]="widthExcerpts()">
+  <img src="/assets/{{ musicExcerpts.card }}.png" alt="icones de música" width="46px">
+  <p class="content ff-roboto-mono">{{ musicExcerpts.content }}</p>
+  <p class="author ff-allison">{{ musicExcerpts.author }}</p>
   <div class="actions">
-    <button class="button-edit">
+    <button class="button-edit" routerLink="/music/editExcerpt/{{musicExcerpts.id}}">
       <img src="/assets/icon-edit.svg" alt="Icone de editar" width="22px">
     </button>
-    <button class="button-delete">
+    <button class="button-delete" routerLink="/music/deleteExcerpt/{{musicExcerpts.id}}">
       <img src="/assets/icon-delete.svg" alt="Icone de excluir" width="24px">
     </button>
   </div>

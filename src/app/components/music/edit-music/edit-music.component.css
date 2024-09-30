@@ -9,13 +9,12 @@
   width: 200px;
 }
 
-
-.create-music {
+.edit-excerpts {
   padding: 3rem 0 0;
   gap: 0;
 }
 
-.create-music .create-container {
+.edit-excerpts .edit-container {
   background: #D9B6E2;
 
   border: none;
@@ -27,13 +26,13 @@
   padding: 2rem;
 }
 
-.create-music form label {
+.edit-excerpts form label {
   color: #5E367D;
   font-weight: bold;
   margin: 0 0 1rem;
 }
 
-.create-music form .input {
+.edit-excerpts form .input {
   border: none;
   height: 40px;
   padding: 1rem 2rem;
@@ -49,7 +48,7 @@
   }
 }
 
-.create-music form .textarea {
+.edit-excerpts form .textarea {
   border: none;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -59,13 +58,8 @@
 .container-radio {
   display: flex;
   justify-content: space-evenly;
-  gap: 1.5rem;
+  gap: 2.5rem;
   flex-wrap: wrap;
-}
-
-.container-radio label {
-  font-weight: bold;
-  padding-bottom: 16px;
 }
 
 .cards {
@@ -117,7 +111,7 @@ input[type='radio'] {
   display: none;
 }
 
-.radio-card label {
+.radio-modelo label {
   display: flex;
   align-items: center;
   column-gap: 20px;

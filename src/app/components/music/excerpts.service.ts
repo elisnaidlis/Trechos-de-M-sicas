@@ -12,8 +12,7 @@ export class ExcerptsService {
 
   constructor(private http: HttpClient) { }
 
-  // método dentro do service que solicitará ao HTTP a lista dos trechos
-  // de musicas que se encontra na API
+  // método dentro do service que solicitará ao HTTP a lista dos trechos de musicas que se encontra na API
   list(): Observable<Excerpts[]> {
     return this.http.get<Excerpts[]>(this.API)
   }
@@ -26,12 +25,17 @@ export class ExcerptsService {
     return this.http.post<Excerpts>(this.API, excerpts)
   }
 
-  delete(id: number): Observable<Excerpts> {
-    const url = `${this.API}/${id}`
+  edit(excerpts: Excerpts): Observable<Excerpts> {
+    const url = `${this.API}/${excerpts.id}`
+    return this.http.put<Excerpts>(url, excerpts)
+  }
+
+  delete(id: string): Observable<Excerpts> {
+    const url = `${this.API}/${id}`                  // -----> http://localhost:3000/excerpts/id
     return this.http.delete<Excerpts>(url)
   }
 
-  searchById(id: number): Observable<Excerpts> {
+  searchById(id: string): Observable<Excerpts> {
     const url = `${this.API}/${id}`
     return this.http.get<Excerpts>(url)
   }
